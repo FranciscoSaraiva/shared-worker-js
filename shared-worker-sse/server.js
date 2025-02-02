@@ -19,14 +19,10 @@ app.get('/events', (req, res) => {
     res.setHeader('Connection', 'keep-alive');
 
     let i = 0;
-    const interval = setInterval(() => {
+    setInterval(() => {
         res.write(`data: event number ${i}\n\n`);
         i++;
-        if (i === 5) {
-            clearInterval(interval);
-            res.end();
-        }
-    }, 5000);
+    }, 3000);
 });
 
 
