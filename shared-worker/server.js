@@ -1,6 +1,3 @@
-// Make a nodejs express server that listens on port 3000
-// Make SSE events that send a message every 5 seconds to the client
-
 const express = require('express');
 const http = require('http');
 const path = require('path');
