@@ -1,4 +1,4 @@
-    console.log('Shared worker is running');
+console.log('Shared worker is running');
 
 
 const eventSource = new EventSource('http://localhost:3000/events');
